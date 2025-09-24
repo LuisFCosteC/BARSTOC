@@ -1,0 +1,12 @@
+D:\PROGRAMACION\Angular\BARSTOC\backend\api\BARSTOC_DAL\bin\Debug\net8.0\BARSTOC_DAL.deps.json
+D:\PROGRAMACION\Angular\BARSTOC\backend\api\BARSTOC_DAL\bin\Debug\net8.0\BARSTOC_DAL.dll
+D:\PROGRAMACION\Angular\BARSTOC\backend\api\BARSTOC_DAL\bin\Debug\net8.0\BARSTOC_DAL.pdb
+D:\PROGRAMACION\Angular\BARSTOC\backend\api\BARSTOC_DAL\obj\Debug\net8.0\BARSTOC_DAL.GeneratedMSBuildEditorConfig.editorconfig
+D:\PROGRAMACION\Angular\BARSTOC\backend\api\BARSTOC_DAL\obj\Debug\net8.0\BARSTOC_DAL.AssemblyInfoInputs.cache
+D:\PROGRAMACION\Angular\BARSTOC\backend\api\BARSTOC_DAL\obj\Debug\net8.0\BARSTOC_DAL.AssemblyInfo.cs
+D:\PROGRAMACION\Angular\BARSTOC\backend\api\BARSTOC_DAL\obj\Debug\net8.0\BARSTOC_DAL.csproj.CoreCompileInputs.cache
+D:\PROGRAMACION\Angular\BARSTOC\backend\api\BARSTOC_DAL\obj\Debug\net8.0\BARSTOC_DAL.sourcelink.json
+D:\PROGRAMACION\Angular\BARSTOC\backend\api\BARSTOC_DAL\obj\Debug\net8.0\BARSTOC_DAL.dll
+D:\PROGRAMACION\Angular\BARSTOC\backend\api\BARSTOC_DAL\obj\Debug\net8.0\refint\BARSTOC_DAL.dll
+D:\PROGRAMACION\Angular\BARSTOC\backend\api\BARSTOC_DAL\obj\Debug\net8.0\BARSTOC_DAL.pdb
+D:\PROGRAMACION\Angular\BARSTOC\backend\api\BARSTOC_DAL\obj\Debug\net8.0\ref\BARSTOC_DAL.dll

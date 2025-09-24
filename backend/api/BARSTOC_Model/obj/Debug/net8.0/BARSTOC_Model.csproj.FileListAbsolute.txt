@@ -1,0 +1,15 @@
+D:\PROGRAMACION\Angular\BARSTOC\backend\api\BARSTOC_Model\bin\Debug\net8.0\BARSTOC_Model.deps.json
+D:\PROGRAMACION\Angular\BARSTOC\backend\api\BARSTOC_Model\bin\Debug\net8.0\BARSTOC_Model.dll
+D:\PROGRAMACION\Angular\BARSTOC\backend\api\BARSTOC_Model\bin\Debug\net8.0\BARSTOC_Model.pdb
+D:\PROGRAMACION\Angular\BARSTOC\backend\api\BARSTOC_Model\obj\Debug\net8.0\BARSTOC_Model.GeneratedMSBuildEditorConfig.editorconfig
+D:\PROGRAMACION\Angular\BARSTOC\backend\api\BARSTOC_Model\obj\Debug\net8.0\BARSTOC_Model.AssemblyInfoInputs.cache
+D:\PROGRAMACION\Angular\BARSTOC\backend\api\BARSTOC_Model\obj\Debug\net8.0\BARSTOC_Model.AssemblyInfo.cs
+D:\PROGRAMACION\Angular\BARSTOC\backend\api\BARSTOC_Model\obj\Debug\net8.0\BARSTOC_Model.csproj.CoreCompileInputs.cache
+D:\PROGRAMACION\Angular\BARSTOC\backend\api\BARSTOC_Model\obj\Debug\net8.0\BARSTOC_Model.sourcelink.json
+D:\PROGRAMACION\Angular\BARSTOC\backend\api\BARSTOC_Model\obj\Debug\net8.0\BARSTOC_Model.dll
+D:\PROGRAMACION\Angular\BARSTOC\backend\api\BARSTOC_Model\obj\Debug\net8.0\refint\BARSTOC_Model.dll
+D:\PROGRAMACION\Angular\BARSTOC\backend\api\BARSTOC_Model\obj\Debug\net8.0\BARSTOC_Model.pdb
+D:\PROGRAMACION\Angular\BARSTOC\backend\api\BARSTOC_Model\obj\Debug\net8.0\ref\BARSTOC_Model.dll
+D:\PROGRAMACION\Angular\BARSTOC\backend\api\BARSTOC_Model\bin\Debug\net8.0\BARSTOC_Model.runtimeconfig.json
+D:\PROGRAMACION\Angular\BARSTOC\backend\api\BARSTOC_Model\obj\Debug\net8.0\BARSTOC_Model.csproj.AssemblyReference.cache
+D:\PROGRAMACION\Angular\BARSTOC\backend\api\BARSTOC_Model\obj\Debug\net8.0\BARSTOC_Model.genruntimeconfig.cache
