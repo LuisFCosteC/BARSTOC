@@ -10,9 +10,10 @@ PRINT '=== INICIANDO INSERCIÓN DE DATOS DE PRUEBA ===';
 -- 1. Insertar Sedes
 PRINT '1. Insertando sedes...';
 INSERT INTO TBL_Sedes (nombreSede, direccion, telefono) VALUES
-(N'Restrepo - Bogotá', N'Calle 123 #45-67, Restrepo', '6011234567'),
-(N'Sede Chapinero - 95', N'Carrera 95 #23-45, Chapinero', '6012345678'),
-(N'Parkway - Medellín', N'Avenida Parkway #67-89, Medellín', '6013456789');
+(N'Global',					N'Global',								'6011234566'),
+(N'Restrepo - Bogotá',		N'Cl 17 Sur #34, Bogotá',				'6011234567'),
+(N'Sede Chapinero - 95',	N'Cl. 95 #13-50, Bogotá, Chapinero',	'6012345678'),
+(N'Parkway - Bogotá',		N'Cra. 24 #39B-08, Bogotá',				'6013456789');
 
 PRINT '=== TABLA TBL_Sedes ===';
 SELECT * FROM TBL_Sedes;
@@ -58,10 +59,32 @@ GO
 -- 5. Insertar Usuarios (password: 123456 - debe ser hasheado en la aplicación)
 PRINT '5. Insertando usuarios...';
 INSERT INTO TBL_Usuarios (numeroDocumento, idSede, nombreUsuario, apellidoUsuario, correo, idRol, usuarioLogin, passwordHash) VALUES
+-- Sede Global
 ('123456789', 1, N'Carlos', N'Rodríguez', 'carlos.rodriguez@barestoc.com', 1, 'carlos.admin', 'hashed_password_123456'),
-('987654321', 1, N'Ana', N'Gómez', 'ana.gomez@barestoc.com', 2, 'ana.cajero', 'hashed_password_123456'),
-('456789123', 1, N'Luis', N'Martínez', 'luis.martinez@barestoc.com', 3, 'luis.mesero', 'hashed_password_123456'),
-('789123456', 2, N'María', N'López', 'maria.lopez@barestoc.com', 3, 'maria.mesero', 'hashed_password_123456');
+
+-- Sede 2 (Chapinero - 95): 2 Cajeros y 3 Meseros
+('987654321', 2, N'Ana', N'Gómez', 'ana.gomez@barestoc.com', 2, 'ana.cajero1', 'hashed_password_123456'),
+('987654322', 2, N'Pedro', N'Hernández', 'pedro.hernandez@barestoc.com', 2, 'pedro.cajero2', 'hashed_password_123456'),
+
+('456789123', 2, N'Luis', N'Martínez', 'luis.martinez@barestoc.com', 3, 'luis.mesero1', 'hashed_password_123456'),
+('456789124', 2, N'María', N'López', 'maria.lopez@barestoc.com', 3, 'maria.mesero2', 'hashed_password_123456'),
+('456789125', 2, N'Laura', N'García', 'laura.garcia@barestoc.com', 3, 'laura.mesero3', 'hashed_password_123456'),
+
+-- Sede 3 (Parkway - Bogotá): 2 Cajeros y 3 Meseros
+('789123456', 3, N'Juan', N'Pérez', 'juan.perez@barestoc.com', 2, 'juan.cajero1', 'hashed_password_123456'),
+('789123457', 3, N'Carmen', N'Díaz', 'carmen.diaz@barestoc.com', 2, 'carmen.cajero2', 'hashed_password_123456'),
+
+('789123458', 3, N'Ricardo', N'Suárez', 'ricardo.suarez@barestoc.com', 3, 'ricardo.mesero1', 'hashed_password_123456'),
+('789123459', 3, N'Patricia', N'Romero', 'patricia.romero@barestoc.com', 3, 'patricia.mesero2', 'hashed_password_123456'),
+('789123460', 3, N'Fernando', N'Morales', 'fernando.morales@barestoc.com', 3, 'fernando.mesero3', 'hashed_password_123456'),
+
+-- Sede 4 (No existe en la inserción original - agregando personal por si acaso)
+('890123461', 4, N'Sandra', N'Rojas', 'sandra.rojas@barestoc.com', 2, 'sandra.cajero1', 'hashed_password_123456'),
+('890123462', 4, N'Miguel', N'Castillo', 'miguel.castillo@barestoc.com', 2, 'miguel.cajero2', 'hashed_password_123456'),
+
+('890123463', 4, N'Andrea', N'Mendoza', 'andrea.mendoza@barestoc.com', 3, 'andrea.mesero1', 'hashed_password_123456'),
+('890123464', 4, N'Daniel', N'Vargas', 'daniel.vargas@barestoc.com', 3, 'daniel.mesero2', 'hashed_password_123456'),
+('890123465', 4, N'Gabriela', N'Castro', 'gabriela.castro@barestoc.com', 3, 'gabriela.mesero3', 'hashed_password_123456');
 
 PRINT '=== TABLA TBL_Usuarios ===';
 SELECT * FROM TBL_Usuarios;
