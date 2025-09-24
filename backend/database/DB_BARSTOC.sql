@@ -9,6 +9,32 @@ GO
 --------------------------- Eliminar tablas en orden correcto (dependencias) ---------------------------
 --------------------------------------------------------------------------------------------------------
 
+-- Primero eliminar triggers (si existen)
+DROP TRIGGER IF EXISTS TR_After_Insert_DetallePedido;
+DROP TRIGGER IF EXISTS TR_After_Update_Pedido_Cancelado;
+DROP TRIGGER IF EXISTS TR_After_Update_Pedido_Estado;
+DROP TRIGGER IF EXISTS TR_After_Insert_Pedido;
+DROP TRIGGER IF EXISTS TR_Before_Insert_Pedido;
+GO
+
+-- Luego eliminar procedures
+DROP PROCEDURE IF EXISTS SP_ActualizarInventario;
+DROP PROCEDURE IF EXISTS SP_ReporteVentasPorFecha;
+DROP PROCEDURE IF EXISTS SP_CancelarPedido;
+DROP PROCEDURE IF EXISTS SP_CerrarPedido;
+DROP PROCEDURE IF EXISTS SP_AgregarProductoPedido;
+DROP PROCEDURE IF EXISTS SP_CrearPedido;
+DROP PROCEDURE IF EXISTS SP_FormatearPrecio;
+GO
+
+-- Luego eliminar views
+DROP VIEW IF EXISTS VW_Pedidos_Activos;
+DROP VIEW IF EXISTS VW_Inventario_Actual;
+DROP VIEW IF EXISTS VW_Reporte_Ventas;
+DROP VIEW IF EXISTS VW_Productos_Precios_Formateados;
+GO
+
+-- Finalmente eliminar tablas en orden inverso de dependencias
 DROP TABLE IF EXISTS TBL_Detalle_Pedidos;
 DROP TABLE IF EXISTS TBL_Pedidos;
 DROP TABLE IF EXISTS TBL_Movimientos_Inventario;
@@ -23,40 +49,6 @@ DROP TABLE IF EXISTS TBL_Categoria;
 DROP TABLE IF EXISTS TBL_Roles;
 DROP TABLE IF EXISTS TBL_Sedes;
 DROP TABLE IF EXISTS TBL_Numero_Pedido;
-GO
-
--------------------------------------------------------------------------
---------------------------- DROP DE PROCEDURES --------------------------
--------------------------------------------------------------------------
-
-DROP PROCEDURE IF EXISTS SP_ActualizarInventario;
-DROP PROCEDURE IF EXISTS SP_ReporteVentasPorFecha;
-DROP PROCEDURE IF EXISTS SP_CancelarPedido;
-DROP PROCEDURE IF EXISTS SP_CerrarPedido;
-DROP PROCEDURE IF EXISTS SP_AgregarProductoPedido;
-DROP PROCEDURE IF EXISTS SP_CrearPedido;
-DROP PROCEDURE IF EXISTS SP_FormatearPrecio;
-GO
-
--------------------------------------------------------------------------
------------------------------ DROP DE VIEWS -----------------------------
--------------------------------------------------------------------------
-
-DROP VIEW IF EXISTS VW_Pedidos_Activos;
-DROP VIEW IF EXISTS VW_Inventario_Actual;
-DROP VIEW IF EXISTS VW_Reporte_Ventas;
-DROP VIEW IF EXISTS VW_Productos_Precios_Formateados;
-GO
-
--------------------------------------------------------------------------
----------------------------- DROP DE TRIGGERS ---------------------------
--------------------------------------------------------------------------
-
-DROP TRIGGER IF EXISTS TR_After_Insert_DetallePedido;
-DROP TRIGGER IF EXISTS TR_After_Update_Pedido_Cancelado;
-DROP TRIGGER IF EXISTS TR_After_Update_Pedido_Estado;
-DROP TRIGGER IF EXISTS TR_After_Insert_Pedido;
-DROP TRIGGER IF EXISTS TR_Before_Insert_Pedido;
 GO
 
 -------------------------------------------------------------------------
@@ -86,7 +78,6 @@ GO
 -- Tabla de Productos
 CREATE TABLE TBL_Producto (
     idProducto INT PRIMARY KEY IDENTITY(1,1),
-    codigoProducto VARCHAR(50) UNIQUE NOT NULL,
     nombreProducto NVARCHAR(200) NOT NULL,
     idCategoria INT NOT NULL,
     costo DECIMAL(12,2) NOT NULL CHECK (costo >= 0),
@@ -231,13 +222,13 @@ CREATE TABLE TBL_Movimientos_Inventario (
 );
 GO
 
--- Tabla de Sesiones de Usuario
+-- Tabla de Sesiones de Usuario (CORREGIDA: Cambiar TEXT por NVARCHAR(MAX))
 CREATE TABLE TBL_Sesiones_Usuario (
     idSesionUsuario VARCHAR(100) PRIMARY KEY,
     idUsuario INT NOT NULL,
     fechaInicio DATETIME2 DEFAULT GETDATE(),
     fechaUltimaActividad DATETIME2 DEFAULT GETDATE(),
-    userAgent TEXT,
+    userAgent NVARCHAR(MAX), -- Cambiado de TEXT a NVARCHAR(MAX)
     estado VARCHAR(10) DEFAULT 'activa' CHECK (estado IN ('activa', 'expirada')),
     CONSTRAINT FK_Sesiones_Usuarios FOREIGN KEY (idUsuario) REFERENCES TBL_Usuarios(idUsuario)
 );
@@ -444,7 +435,6 @@ SELECT
     p.fechaApertura as fecha,
     p.numeroPedido,
     s.nombreSede as sede,
-    pr.codigoProducto,
     pr.nombreProducto,
     c.nombreCategoria,
     dp.cantidad,
@@ -468,7 +458,6 @@ GO
 CREATE VIEW VW_Inventario_Actual AS
 SELECT 
     s.nombreSede,
-    p.codigoProducto,
     p.nombreProducto,
     c.nombreCategoria,
     inv.cantidadDisponible,
@@ -504,7 +493,6 @@ GO
 CREATE VIEW VW_Productos_Precios_Formateados AS
 SELECT 
     p.idProducto,
-    p.codigoProducto,
     p.nombreProducto,
     c.nombreCategoria,
     p.costo,
@@ -543,16 +531,44 @@ BEGIN
     SET NOCOUNT ON;
     
     DECLARE @idSede INT;
+    DECLARE @numeroPedido VARCHAR(50);
+    DECLARE @idPedido INT;
     
     -- Obtener la sede de la mesa
     SELECT @idSede = idSede FROM TBL_Mesas WHERE idMesa = @idMesa;
     
-    -- El trigger se encargará de generar el número de pedido
-    INSERT INTO TBL_Pedidos (idMesa, idUsuarioMesero, idSede, observaciones)
-    VALUES (@idMesa, @idUsuarioMesero, @idSede, @observaciones);
+    -- Generar el número de pedido manualmente (ya que el trigger es INSTEAD OF)
+    DECLARE @nuevoNumero INT;
+    
+    -- Obtener o crear el registro de números de pedido
+    MERGE TBL_Numero_Pedido AS target
+    USING (SELECT 1 AS dummy) AS source
+    ON 1=1
+    WHEN NOT MATCHED THEN
+        INSERT (ultimoNumero) VALUES (0);
+    
+    -- Actualizar el último número
+    UPDATE TBL_Numero_Pedido 
+    SET @nuevoNumero = ultimoNumero + 1,
+        ultimoNumero = ultimoNumero + 1;
+    
+    SET @numeroPedido = 'PED-' + FORMAT(@nuevoNumero, '000000');
+    
+    -- Insertar directamente en la tabla (el trigger no interferirá)
+    INSERT INTO TBL_Pedidos (
+        idMesa, idUsuarioMesero, idSede, numeroPedido, 
+        estadoPedido, fechaApertura, observaciones
+    )
+    VALUES (@idMesa, @idUsuarioMesero, @idSede, @numeroPedido, 'activo', GETDATE(), @observaciones);
+    
+    -- Obtener el ID del pedido creado
+    SET @idPedido = SCOPE_IDENTITY();
+    
+    -- Actualizar el estado de la mesa
+    UPDATE TBL_Mesas SET estado = 'ocupada' WHERE idMesa = @idMesa;
     
     -- Retornar el ID del pedido creado
-    SELECT SCOPE_IDENTITY() as idPedido;
+    SELECT @idPedido as idPedido;
 END;
 GO
 
@@ -568,12 +584,30 @@ BEGIN
     DECLARE @precioVenta DECIMAL(12,2);
     DECLARE @subtotal DECIMAL(12,2);
     DECLARE @cantidadDisponible INT;
+    DECLARE @idSede INT;
+    DECLARE @estadoPedido VARCHAR(10);
+    
+    -- Verificar que el pedido existe y está activo
+    SELECT @idSede = idSede, @estadoPedido = estadoPedido 
+    FROM TBL_Pedidos 
+    WHERE idPedido = @idPedido;
+    
+    IF @idSede IS NULL
+    BEGIN
+        RAISERROR('El pedido especificado no existe', 16, 1);
+        RETURN;
+    END
+    
+    IF @estadoPedido != 'activo'
+    BEGIN
+        RAISERROR('No se pueden agregar productos a un pedido cerrado o cancelado', 16, 1);
+        RETURN;
+    END
     
     -- Verificar stock disponible
-    SELECT @cantidadDisponible = inv.cantidadDisponible
-    FROM TBL_Inventario inv
-    INNER JOIN TBL_Pedidos p ON inv.idSede = p.idSede
-    WHERE p.idPedido = @idPedido AND inv.idProducto = @idProducto;
+    SELECT @cantidadDisponible = cantidadDisponible
+    FROM TBL_Inventario 
+    WHERE idSede = @idSede AND idProducto = @idProducto;
     
     IF @cantidadDisponible < @cantidad
     BEGIN
@@ -642,7 +676,6 @@ BEGIN
         fecha,
         numeroPedido,
         sede,
-        codigoProducto,
         nombreProducto,
         nombreCategoria,
         cantidad,

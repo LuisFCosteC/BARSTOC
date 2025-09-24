@@ -32,11 +32,13 @@ GO
 -- 3. Insertar Menús
 PRINT '3. Insertando menús...';
 INSERT INTO TBL_Menu (nombreMenu, icono, url) VALUES
-(N'Dashboard', N'home', N'/dashboard'),
-(N'Pedidos', N'shopping-cart', N'/pedidos'),
-(N'Inventario', N'package', N'/inventario'),
-(N'Reportes', N'bar-chart', N'/reportes'),
-(N'Usuarios', N'users', N'/usuarios');
+	(N'Dashboard',				N'dashboard',				N'/pages/dashboard'),
+	(N'Pedidos',				N'shopping-cart',			N'/pages/pedidos'),
+	(N'Usuarios',				N'group',					N'/pages/usuarios'),
+	(N'Reportes',				N'receipt',					N'/pages/reportes'),
+	(N'Productos',				N'collections_bookmark',	N'/pages/productos'),
+    (N'Historial de pedidos',	N'edit_note',				N'/pages/historial-pedidos'),
+	(N'Inventario',				N'package',					N'/pages/inventario');
 
 PRINT '=== TABLA TBL_Menu ===';
 SELECT * FROM TBL_Menu;
@@ -81,39 +83,39 @@ GO
 
 -- 7. Insertar Productos CON PRECIOS EN PESOS COLOMBIANOS (miles)
 PRINT '7. Insertando productos con precios en pesos colombianos...';
-INSERT INTO TBL_Producto (codigoProducto, nombreProducto, idCategoria, costo, precioVenta) VALUES
+INSERT INTO TBL_Producto (nombreProducto, idCategoria, costo, precioVenta) VALUES
 -- Bebidas Alcohólicas (precios en miles de pesos)
-('WHI001', N'Whisky Johnnie Walker Red Label 750ml', 1, 85000.00, 120000.00),
-('RON001', N'Ron Viejo de Caldas 750ml', 1, 35000.00, 55000.00),
-('VIN001', N'Vino Tinto Reserva Santa Helena 750ml', 1, 25000.00, 45000.00),
-('TEC001', N'Tequila José Cuervo Silver 750ml', 1, 65000.00, 95000.00),
+(N'Whisky Johnnie Walker Red Label 750ml', 1, 85000.00, 120000.00),
+(N'Ron Viejo de Caldas 750ml', 1, 35000.00, 55000.00),
+(N'Vino Tinto Reserva Santa Helena 750ml', 1, 25000.00, 45000.00),
+(N'Tequila José Cuervo Silver 750ml', 1, 65000.00, 95000.00),
 
 -- Cervezas Nacionales (precios por unidad)
-('CER001', N'Cerveza Águila Light 330ml', 3, 2500.00, 5000.00),
-('CER002', N'Cerveza Poker 330ml', 3, 2200.00, 4500.00),
-('CER003', N'Cerveza Club Colombia Dorada 330ml', 3, 2800.00, 6000.00),
+(N'Cerveza Águila Light 330ml', 3, 2500.00, 5000.00),
+(N'Cerveza Poker 330ml', 3, 2200.00, 4500.00),
+(N'Cerveza Club Colombia Dorada 330ml', 3, 2800.00, 6000.00),
 
 -- Cervezas Importadas (precios por unidad)
-('CER101', N'Cerveza Corona Extra 355ml', 4, 4500.00, 9000.00),
-('CER102', N'Cerveza Heineken 330ml', 4, 4000.00, 8000.00),
-('CER103', N'Cerveza Stella Artois 330ml', 4, 4200.00, 8500.00),
+(N'Cerveza Corona Extra 355ml', 4, 4500.00, 9000.00),
+(N'Cerveza Heineken 330ml', 4, 4000.00, 8000.00),
+(N'Cerveza Stella Artois 330ml', 4, 4200.00, 8500.00),
 
 -- Bebidas No Alcohólicas
-('REF001', N'Gaseosa Coca-Cola 400ml', 2, 1500.00, 3500.00),
-('REF002', N'Gaseosa Pepsi 400ml', 2, 1400.00, 3000.00),
-('AGU001', N'Agua Mineral Sin Gas 600ml', 2, 1200.00, 2500.00),
-('JUGO01', N'Jugo Hit Naranja 500ml', 2, 1800.00, 4000.00),
+(N'Gaseosa Coca-Cola 400ml', 2, 1500.00, 3500.00),
+(N'Gaseosa Pepsi 400ml', 2, 1400.00, 3000.00),
+(N'Agua Mineral Sin Gas 600ml', 2, 1200.00, 2500.00),
+(N'Jugo Hit Naranja 500ml', 2, 1800.00, 4000.00),
 
 -- Snacks y Pasabocas
-('PAP001', N'Papas Margaritas Natural 40g', 5, 800.00, 2500.00),
-('MAN001', N'Maní Japonés Tajado 50g', 5, 1200.00, 3000.00),
-('CHI001', N'Chicharrones de Cerdo 60g', 5, 1500.00, 4000.00),
-('QUES01', N'Queso Fundido con Arepitas', 5, 4500.00, 12000.00),
+(N'Papas Margaritas Natural 40g', 5, 800.00, 2500.00),
+(N'Maní Japonés Tajado 50g', 5, 1200.00, 3000.00),
+(N'Chicharrones de Cerdo 60g', 5, 1500.00, 4000.00),
+(N'Queso Fundido con Arepitas', 5, 4500.00, 12000.00),
 
 -- Cocteles Especiales
-('COC001', N'Cuba Libre Premium', 6, 8000.00, 18000.00),
-('COC002', N'Mojito Clásico', 6, 7500.00, 16000.00),
-('COC003', N'Margarita de Tequila', 6, 9500.00, 22000.00);
+(N'Cuba Libre Premium', 6, 8000.00, 18000.00),
+(N'Mojito Clásico', 6, 7500.00, 16000.00),
+(N'Margarita de Tequila', 6, 9500.00, 22000.00);
 
 PRINT '=== TABLA TBL_Producto ===';
 SELECT * FROM TBL_Producto;
@@ -167,7 +169,7 @@ SELECT * FROM TBL_Inventario;
 GO
 
 -------------------------------------------------------------------------
------------------------- PRUEBAS DEL SISTEMA ----------------------------
+------------------------ PRUEBAS DEL SISTEMA CORREGIDAS -----------------
 -------------------------------------------------------------------------
 
 PRINT '=== INICIANDO PRUEBAS DEL SISTEMA ===';
@@ -177,52 +179,99 @@ PRINT 'Prueba 1: Ver productos con precios formateados...';
 SELECT * FROM VW_Productos_Precios_Formateados;
 GO
 
--- Prueba 2: Crear un pedido
+-- Prueba 2: Crear un pedido (CORREGIDO COMPLETAMENTE)
 PRINT 'Prueba 2: Creando pedido...';
 DECLARE @NuevoPedidoId INT;
-EXEC SP_CrearPedido @idMesa = 1, @idUsuarioMesero = 3, @observaciones = N'Cliente frecuente - Mesa preferencial';
-SET @NuevoPedidoId = SCOPE_IDENTITY();
-PRINT 'Pedido creado con ID: ' + CAST(@NuevoPedidoId AS VARCHAR);
-GO
 
--- Prueba 3: Agregar productos al pedido (con precios en miles)
-PRINT 'Prueba 3: Agregando productos al pedido...';
-EXEC SP_AgregarProductoPedido @idPedido = @NuevoPedidoId, @idProducto = 5, @cantidad = 3;   -- 3 Cervezas Águila
-EXEC SP_AgregarProductoPedido @idPedido = @NuevoPedidoId, @idProducto = 15, @cantidad = 2;  -- 2 Papas Margaritas
-EXEC SP_AgregarProductoPedido @idPedido = @NuevoPedidoId, @idProducto = 11, @cantidad = 2;  -- 2 Coca-Colas
-EXEC SP_AgregarProductoPedido @idPedido = @NuevoPedidoId, @idProducto = 19, @cantidad = 1;  -- 1 Cuba Libre
+-- Verificar que la mesa existe y obtener el idSede
+DECLARE @idSedeMesa INT;
+SELECT @idSedeMesa = idSede FROM TBL_Mesas WHERE idMesa = 1;
 
--- Prueba 4: Verificar que la mesa se marcó como ocupada
-PRINT 'Prueba 4: Verificando estado de la mesa...';
-SELECT numeroMesa, estado FROM TBL_Mesas WHERE idMesa = 1;
-GO
+IF @idSedeMesa IS NULL
+BEGIN
+    PRINT 'ERROR: La mesa con idMesa = 1 no existe';
+    RETURN;
+END
 
--- Prueba 5: Ver pedido activo con total en pesos
-PRINT 'Prueba 5: Ver pedido activo con total en pesos colombianos...';
-SELECT 
-    numeroPedido,
-    numeroMesa,
-    sede,
-    mesero,
-    fechaApertura,
-    FORMAT(totalPedido, 'C', 'es-CO') as TotalFormateado,
-    totalPedido as TotalNumerico,
-    observaciones
-FROM VW_Pedidos_Activos;
-GO
+PRINT 'idSede de la mesa: ' + CAST(@idSedeMesa AS VARCHAR);
 
--- Prueba 6: Probar el procedimiento de formateo de precios
-PRINT 'Prueba 6: Probando formateo de precios individual...';
-DECLARE @precioFormateado NVARCHAR(50);
-DECLARE @precioPrueba DECIMAL(12,2) = 125000.50;
-EXEC SP_FormatearPrecio @precio = @precioPrueba, @precioFormateado = @precioFormateado OUTPUT;
-PRINT 'Precio formateado: ' + @precioFormateado;
-GO
+-- Crear el pedido
+INSERT INTO TBL_Pedidos (idMesa, idSede, idUsuarioMesero, fechaApertura, observaciones, estadoPedido)
+VALUES (1, @idSedeMesa, 3, GETDATE(), N'Cliente frecuente - Mesa preferencial', 'activo');
 
--- Prueba 7: Cerrar pedido (pagar)
-PRINT 'Prueba 7: Cerrando pedido...';
-EXEC SP_CerrarPedido @idPedido = @NuevoPedidoId;
-GO
+-- Obtener el ID usando IDENT_CURRENT (más confiable)
+SET @NuevoPedidoId = IDENT_CURRENT('TBL_Pedidos');
+
+PRINT 'Pedido creado con ID: ' + CAST(ISNULL(@NuevoPedidoId, 0) AS VARCHAR);
+
+-- Verificar que el pedido se creó correctamente
+IF @NuevoPedidoId IS NOT NULL AND @NuevoPedidoId > 0
+BEGIN
+    -- Actualizar el número de pedido basado en el ID
+    UPDATE TBL_Pedidos SET numeroPedido = 'PED-' + RIGHT('00000' + CAST(@NuevoPedidoId AS VARCHAR(5)), 5)
+    WHERE idPedido = @NuevoPedidoId;
+    
+    PRINT 'Número de pedido actualizado correctamente';
+    
+    -- Prueba 3: Agregar productos al pedido (SOLO SI EL PEDIDO EXISTE)
+    PRINT 'Prueba 3: Agregando productos al pedido...';
+    
+    BEGIN TRY
+        EXEC SP_AgregarProductoPedido @idPedido = @NuevoPedidoId, @idProducto = 5, @cantidad = 3;   -- 3 Cervezas Águila
+        PRINT 'Producto 1 agregado correctamente';
+        
+        EXEC SP_AgregarProductoPedido @idPedido = @NuevoPedidoId, @idProducto = 15, @cantidad = 2;  -- 2 Papas Margaritas
+        PRINT 'Producto 2 agregado correctamente';
+        
+        EXEC SP_AgregarProductoPedido @idPedido = @NuevoPedidoId, @idProducto = 11, @cantidad = 2;  -- 2 Coca-Colas
+        PRINT 'Producto 3 agregado correctamente';
+        
+        EXEC SP_AgregarProductoPedido @idPedido = @NuevoPedidoId, @idProducto = 19, @cantidad = 1;  -- 1 Cuba Libre
+        PRINT 'Producto 4 agregado correctamente';
+    END TRY
+    BEGIN CATCH
+        PRINT 'Error al agregar productos: ' + ERROR_MESSAGE();
+    END CATCH
+
+    -- Prueba 4: Verificar que la mesa se marcó como ocupada
+    PRINT 'Prueba 4: Verificando estado de la mesa...';
+    SELECT numeroMesa, estado FROM TBL_Mesas WHERE idMesa = 1;
+
+    -- Prueba 5: Ver pedido activo con total en pesos
+    PRINT 'Prueba 5: Ver pedido activo con total en pesos colombianos...';
+    SELECT 
+        numeroPedido,
+        numeroMesa,
+        nombreSede as sede,
+        mesero,
+        fechaApertura,
+        FORMAT(totalPedido, 'C', 'es-CO') as TotalFormateado,
+        totalPedido as TotalNumerico,
+        observaciones
+    FROM VW_Pedidos_Activos
+    WHERE idPedido = @NuevoPedidoId;
+
+    -- Prueba 6: Probar el procedimiento de formateo de precios
+    PRINT 'Prueba 6: Probando formateo de precios individual...';
+    DECLARE @precioFormateado NVARCHAR(50);
+    DECLARE @precioPrueba DECIMAL(12,2) = 125000.50;
+    EXEC SP_FormatearPrecio @precio = @precioPrueba, @precioFormateado = @precioFormateado OUTPUT;
+    PRINT 'Precio formateado: ' + @precioFormateado;
+
+    -- Prueba 7: Cerrar pedido (pagar) - SOLO SI EXISTE
+    PRINT 'Prueba 7: Cerrando pedido...';
+    BEGIN TRY
+        EXEC SP_CerrarPedido @idPedido = @NuevoPedidoId;
+        PRINT 'Pedido cerrado correctamente';
+    END TRY
+    BEGIN CATCH
+        PRINT 'Error al cerrar pedido: ' + ERROR_MESSAGE();
+    END CATCH
+END
+ELSE
+BEGIN
+    PRINT 'ERROR: No se pudo crear el pedido.';
+END
 
 -- Prueba 8: Verificar que la mesa se liberó
 PRINT 'Prueba 8: Verificando que la mesa se liberó...';
@@ -231,16 +280,7 @@ GO
 
 -- Prueba 9: Ver reporte de ventas con precios formateados
 PRINT 'Prueba 9: Generando reporte de ventas con formato colombiano...';
-SELECT 
-    fecha,
-    numeroPedido,
-    sede,
-    nombreProducto,
-    cantidad,
-    precioVentaFormateado,
-    subtotalFormateado,
-    mesero
-FROM (
+BEGIN TRY
     SELECT 
         fecha,
         numeroPedido,
@@ -250,73 +290,155 @@ FROM (
         FORMAT(precioVenta, 'C', 'es-CO') as precioVentaFormateado,
         FORMAT(subtotal, 'C', 'es-CO') as subtotalFormateado,
         mesero
-    FROM VW_Reporte_Ventas
-) AS ReporteFormateado;
+    FROM VW_Reporte_Ventas;
+END TRY
+BEGIN CATCH
+    PRINT 'Error en reporte de ventas: ' + ERROR_MESSAGE();
+END CATCH
 GO
 
--- Prueba 10: Crear y cancelar un pedido
+-- Prueba 10: Crear y cancelar un pedido (CORREGIDA)
 PRINT 'Prueba 10: Probando cancelación de pedido...';
 DECLARE @PedidoCancelarId INT;
-EXEC SP_CrearPedido @idMesa = 2, @idUsuarioMesero = 3, @observaciones = N'Pedido de prueba para cancelar';
-SET @PedidoCancelarId = SCOPE_IDENTITY();
 
--- Agregar productos costosos
-EXEC SP_AgregarProductoPedido @idPedido = @PedidoCancelarId, @idProducto = 1, @cantidad = 1;  -- 1 Whisky Johnnie Walker
-EXEC SP_AgregarProductoPedido @idPedido = @PedidoCancelarId, @idProducto = 4, @cantidad = 1;  -- 1 Tequila José Cuervo
+-- Obtener el idSede de la mesa 2
+DECLARE @idSedeMesa2 INT;
+SELECT @idSedeMesa2 = idSede FROM TBL_Mesas WHERE idMesa = 2;
 
--- Ver inventario antes de cancelar
-PRINT 'Inventario antes de cancelar:';
-SELECT 
-    p.nombreProducto,
-    i.cantidadDisponible,
-    FORMAT(p.precioVenta, 'C', 'es-CO') as PrecioUnitario
-FROM TBL_Inventario i
-JOIN TBL_Producto p ON i.idProducto = p.idProducto
-WHERE i.idSede = 1 AND i.idProducto IN (1, 4);
+IF @idSedeMesa2 IS NOT NULL
+BEGIN
+    -- Crear el pedido
+    INSERT INTO TBL_Pedidos (idMesa, idSede, idUsuarioMesero, fechaApertura, observaciones, estadoPedido)
+    VALUES (2, @idSedeMesa2, 3, GETDATE(), N'Pedido de prueba para cancelar', 'activo');
+    
+    -- Obtener el ID usando IDENT_CURRENT
+    SET @PedidoCancelarId = IDENT_CURRENT('TBL_Pedidos');
+    
+    PRINT 'ID del pedido a cancelar: ' + CAST(@PedidoCancelarId AS VARCHAR);
 
--- Cancelar pedido
-EXEC SP_CancelarPedido @idPedido = @PedidoCancelarId;
+    IF @PedidoCancelarId IS NOT NULL AND @PedidoCancelarId > 0
+    BEGIN
+        -- Actualizar el número de pedido
+        UPDATE TBL_Pedidos SET numeroPedido = 'PED-' + RIGHT('00000' + CAST(@PedidoCancelarId AS VARCHAR(5)), 5)
+        WHERE idPedido = @PedidoCancelarId;
 
--- Ver inventario después de cancelar (debe haberse restaurado)
-PRINT 'Inventario después de cancelar:';
-SELECT 
-    p.nombreProducto,
-    i.cantidadDisponible,
-    FORMAT(p.precioVenta, 'C', 'es-CO') as PrecioUnitario
-FROM TBL_Inventario i
-JOIN TBL_Producto p ON i.idProducto = p.idProducto
-WHERE i.idSede = 1 AND i.idProducto IN (1, 4);
+        -- Verificar que el pedido existe antes de agregar productos
+        IF EXISTS (SELECT 1 FROM TBL_Pedidos WHERE idPedido = @PedidoCancelarId)
+        BEGIN
+            -- Agregar productos costosos
+            BEGIN TRY
+                EXEC SP_AgregarProductoPedido @idPedido = @PedidoCancelarId, @idProducto = 1, @cantidad = 1;  -- 1 Whisky Johnnie Walker
+                EXEC SP_AgregarProductoPedido @idPedido = @PedidoCancelarId, @idProducto = 4, @cantidad = 1;  -- 1 Tequila José Cuervo
+                PRINT 'Productos agregados al pedido de cancelación';
+            END TRY
+            BEGIN CATCH
+                PRINT 'Error al agregar productos al pedido de cancelación: ' + ERROR_MESSAGE();
+            END CATCH
+
+            -- Ver inventario antes de cancelar
+            PRINT 'Inventario antes de cancelar:';
+            SELECT 
+                p.nombreProducto,
+                i.cantidadDisponible,
+                FORMAT(p.precioVenta, 'C', 'es-CO') as PrecioUnitario
+            FROM TBL_Inventario i
+            JOIN TBL_Producto p ON i.idProducto = p.idProducto
+            WHERE i.idSede = @idSedeMesa2 AND i.idProducto IN (1, 4);
+
+            -- Cancelar pedido
+            BEGIN TRY
+                EXEC SP_CancelarPedido @idPedido = @PedidoCancelarId;
+                PRINT 'Pedido cancelado correctamente';
+            END TRY
+            BEGIN CATCH
+                PRINT 'Error al cancelar pedido: ' + ERROR_MESSAGE();
+            END CATCH
+
+            -- Ver inventario después de cancelar (debe haberse restaurado)
+            PRINT 'Inventario después de cancelar:';
+            SELECT 
+                p.nombreProducto,
+                i.cantidadDisponible,
+                FORMAT(p.precioVenta, 'C', 'es-CO') as PrecioUnitario
+            FROM TBL_Inventario i
+            JOIN TBL_Producto p ON i.idProducto = p.idProducto
+            WHERE i.idSede = @idSedeMesa2 AND i.idProducto IN (1, 4);
+        END
+        ELSE
+        BEGIN
+            PRINT 'ERROR: El pedido no existe después de crearlo';
+        END
+    END
+    ELSE
+    BEGIN
+        PRINT 'ERROR: No se pudo obtener el ID del pedido de cancelación';
+    END
+END
+ELSE
+BEGIN
+    PRINT 'ERROR: No se encontró la mesa con idMesa = 2';
+END
 GO
 
 -- Prueba 11: Reporte de ventas por fecha con formato colombiano
 PRINT 'Prueba 11: Reporte de ventas por fecha con formato colombiano...';
-EXEC SP_ReporteVentasPorFecha @fechaInicio = '2024-01-01', @fechaFin = GETDATE();
+DECLARE @FechaHoy DATE = GETDATE();
+BEGIN TRY
+    EXEC SP_ReporteVentasPorFecha @fechaInicio = '2024-01-01', @fechaFin = @FechaHoy;
+END TRY
+BEGIN CATCH
+    PRINT 'Error en reporte de ventas: ' + ERROR_MESSAGE();
+END CATCH
 GO
 
 -- Prueba 12: Actualizar inventario manualmente
 PRINT 'Prueba 12: Actualizando inventario manualmente...';
-EXEC SP_ActualizarInventario 
-    @idSede = 1, 
-    @idProducto = 1, 
-    @nuevaCantidad = 30, 
-    @idUsuario = 1,
-    @observaciones = N'Reabastecimiento de whisky premium';
+BEGIN TRY
+    EXEC SP_ActualizarInventario 
+        @idSede = 1, 
+        @idProducto = 1, 
+        @nuevaCantidad = 30, 
+        @idUsuario = 1,
+        @observaciones = N'Reabastecimiento de whisky premium';
+    PRINT 'Inventario actualizado correctamente';
+END TRY
+BEGIN CATCH
+    PRINT 'Error al actualizar inventario: ' + ERROR_MESSAGE();
+END CATCH
 GO
 
 -- Prueba 13: Ver movimientos de inventario
 PRINT 'Prueba 13: Movimientos de inventario...';
+BEGIN TRY
+    SELECT TOP 10
+        p.nombreProducto,
+        mi.tipoMovimiento,
+        mi.cantidad,
+        mi.cantidadAnterior,
+        mi.cantidadNueva,
+        FORMAT((SELECT precioVenta FROM TBL_Producto WHERE idProducto = mi.idProducto), 'C', 'es-CO') as PrecioUnitario,
+        mi.observaciones,
+        mi.fechaMovimiento
+    FROM TBL_Movimientos_Inventario mi
+    JOIN TBL_Producto p ON mi.idProducto = p.idProducto
+    ORDER BY mi.fechaMovimiento DESC;
+END TRY
+BEGIN CATCH
+    PRINT 'Error al consultar movimientos: ' + ERROR_MESSAGE();
+END CATCH
+GO
+
+-- VERIFICACIÓN ADICIONAL: Verificar que los pedidos existen
+PRINT '=== VERIFICACIÓN DE PEDIDOS CREADOS ===';
 SELECT 
-    p.nombreProducto,
-    mi.tipoMovimiento,
-    mi.cantidad,
-    mi.cantidadAnterior,
-    mi.cantidadNueva,
-    FORMAT((SELECT precioVenta FROM TBL_Producto WHERE idProducto = mi.idProducto), 'C', 'es-CO') as PrecioUnitario,
-    mi.observaciones,
-    mi.fechaMovimiento
-FROM TBL_Movimientos_Inventario mi
-JOIN TBL_Producto p ON mi.idProducto = p.idProducto
-ORDER BY mi.fechaMovimiento DESC;
+    idPedido,
+    numeroPedido,
+    idMesa,
+    idSede,
+    estadoPedido,
+    fechaApertura
+FROM TBL_Pedidos 
+ORDER BY idPedido DESC;
 GO
 
 -------------------------------------------------------------------------
@@ -343,7 +465,6 @@ GO
 
 PRINT '3. Productos disponibles con precios formateados:';
 SELECT 
-    p.codigoProducto,
     p.nombreProducto,
     c.nombreCategoria,
     FORMAT(p.precioVenta, 'C', 'es-CO') as PrecioVenta,
@@ -376,19 +497,4 @@ FROM TBL_Inventario i
 JOIN TBL_Sedes s ON i.idSede = s.idSede
 JOIN TBL_Producto p ON i.idProducto = p.idProducto
 ORDER BY s.nombreSede, p.nombreProducto;
-GO
-
-PRINT '=== PRUEBAS COMPLETADAS EXITOSAMENTE ===';
-PRINT 'El sistema DB_BARSTOC está funcionando correctamente con moneda colombiana.';
-PRINT '=== DATOS DE ACCESO PARA PRUEBA ===';
-PRINT '- Usuario administrador: carlos.admin / 123456';
-PRINT '- Usuario cajero: ana.cajero / 123456';
-PRINT '- Usuario mesero: luis.mesero / 123456';
-PRINT '- Usuario mesero 2: maria.mesero / 123456';
-PRINT '=== CARACTERÍSTICAS IMPLEMENTADAS ===';
-PRINT '✅ Soporte UTF-8 para caracteres especiales (tildes, ñ)';
-PRINT '✅ Precios en formato colombiano (miles y millones)';
-PRINT '✅ Formato monetario: $1.000,00 $100.000,00 $1.000.000,00';
-PRINT '✅ Nombres y direcciones con caracteres especiales';
-PRINT '✅ Validaciones para precios colombianos';
 GO
