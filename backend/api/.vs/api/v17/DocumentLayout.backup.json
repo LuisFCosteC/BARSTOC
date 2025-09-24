@@ -1,7 +1,12 @@
 {
   "Version": 1,
   "WorkspaceRootPath": "D:\\PROGRAMACION\\Angular\\BARSTOC\\backend\\api\\",
-  "Documents": [],
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{4BBA0417-054E-4E73-83B6-04DCBE51E1E6}|BARSTOC_DAL\\BARSTOC_DAL.csproj|d:\\programacion\\angular\\barstoc\\backend\\api\\barstoc_dal\\dbcontext\\dbbarstoccontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4BBA0417-054E-4E73-83B6-04DCBE51E1E6}|BARSTOC_DAL\\BARSTOC_DAL.csproj|solutionrelative:barstoc_dal\\dbcontext\\dbbarstoccontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
   "DocumentGroupContainers": [
     {
       "Orientation": 0,
@@ -9,8 +14,21 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": -1,
+          "SelectedChildIndex": 0,
           "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "DbBarstocContext.cs",
+              "DocumentMoniker": "D:\\PROGRAMACION\\Angular\\BARSTOC\\backend\\api\\BARSTOC_DAL\\DBContext\\DbBarstocContext.cs",
+              "RelativeDocumentMoniker": "BARSTOC_DAL\\DBContext\\DbBarstocContext.cs",
+              "ToolTip": "D:\\PROGRAMACION\\Angular\\BARSTOC\\backend\\api\\BARSTOC_DAL\\DBContext\\DbBarstocContext.cs",
+              "RelativeToolTip": "BARSTOC_DAL\\DBContext\\DbBarstocContext.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAfAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-24T20:50:48.643Z",
+              "EditorCaption": ""
+            },
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"

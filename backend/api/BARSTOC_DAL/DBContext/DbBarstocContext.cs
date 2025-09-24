@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using Microsoft.EntityFrameworkCore;
 
-namespace BARSTOC_Model;
+namespace BARSTOC_DAL.DBContext;
 
 public partial class DbBarstocContext : DbContext
 {

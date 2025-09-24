@@ -10,4 +10,10 @@
     <PackageReference Include="Swashbuckle.AspNetCore" Version="6.6.2" />
   </ItemGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\BARSTOC_BLL\BARSTOC_BLL.csproj" />
+    <ProjectReference Include="..\BARSTOC_DTO\BARSTOC_DTO.csproj" />
+    <ProjectReference Include="..\BARSTOC_IOC\BARSTOC_IOC.csproj" />
+  </ItemGroup>
+
 </Project>

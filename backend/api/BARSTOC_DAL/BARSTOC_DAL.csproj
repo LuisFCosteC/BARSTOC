@@ -6,4 +6,8 @@
     <Nullable>enable</Nullable>
   </PropertyGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\BARSTOC_Model\BARSTOC_Model.csproj" />
+  </ItemGroup>
+
 </Project>
