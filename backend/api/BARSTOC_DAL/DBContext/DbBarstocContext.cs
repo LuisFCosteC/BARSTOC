@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using Microsoft.EntityFrameworkCore;
+using BARSTOC_Model;
 
 namespace BARSTOC_DAL.DBContext;
 
