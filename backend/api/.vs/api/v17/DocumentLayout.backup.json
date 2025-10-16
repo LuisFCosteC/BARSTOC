@@ -1,12 +1,7 @@
 {
   "Version": 1,
   "WorkspaceRootPath": "D:\\PROGRAMACION\\Angular\\BARSTOC\\backend\\api\\",
-  "Documents": [
-    {
-      "AbsoluteMoniker": "D:0:0:{4BBA0417-054E-4E73-83B6-04DCBE51E1E6}|BARSTOC_DAL\\BARSTOC_DAL.csproj|d:\\programacion\\angular\\barstoc\\backend\\api\\barstoc_dal\\repositorios\\contrato\\igenericrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{4BBA0417-054E-4E73-83B6-04DCBE51E1E6}|BARSTOC_DAL\\BARSTOC_DAL.csproj|solutionrelative:barstoc_dal\\repositorios\\contrato\\igenericrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    }
-  ],
+  "Documents": [],
   "DocumentGroupContainers": [
     {
       "Orientation": 0,
@@ -14,7 +9,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 2,
+          "SelectedChildIndex": -1,
           "Children": [
             {
               "$type": "Bookmark",
@@ -23,19 +18,6 @@
             {
               "$type": "Bookmark",
               "Name": "ST:128:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "IGenericRepository.cs",
-              "DocumentMoniker": "D:\\PROGRAMACION\\Angular\\BARSTOC\\backend\\api\\BARSTOC_DAL\\Repositorios\\Contrato\\IGenericRepository.cs",
-              "RelativeDocumentMoniker": "BARSTOC_DAL\\Repositorios\\Contrato\\IGenericRepository.cs",
-              "ToolTip": "D:\\PROGRAMACION\\Angular\\BARSTOC\\backend\\api\\BARSTOC_DAL\\Repositorios\\Contrato\\IGenericRepository.cs",
-              "RelativeToolTip": "BARSTOC_DAL\\Repositorios\\Contrato\\IGenericRepository.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-16T16:46:16.321Z",
-              "EditorCaption": ""
             }
           ]
         }
