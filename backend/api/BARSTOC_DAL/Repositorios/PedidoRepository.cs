@@ -10,11 +10,11 @@ using Microsoft.EntityFrameworkCore;
 
 namespace BARSTOC_DAL.Repositorios
 {
-    public class ProductoRepository : GenericRepository<TBL_Pedidos>, IPedidoRepository
+    public class PedidoRepository : GenericRepository<TBL_Pedidos>, IPedidoRepository
     {
         private readonly DbBarstocContext _dbcontext;
 
-        public ProductoRepository(DbBarstocContext dbcontext) : base(dbcontext)
+        public PedidoRepository(DbBarstocContext dbcontext) : base(dbcontext)
         {
             _dbcontext = dbcontext;
         }

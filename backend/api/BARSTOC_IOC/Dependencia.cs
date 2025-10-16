@@ -3,10 +3,13 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using Microsoft.EntityFrameworkCore;
+using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using BARSTOC_DAL.DBContext;
-using Microsoft.Extensions.Configuration;
-using Microsoft.EntityFrameworkCore;
+using BARSTOC_DAL.Repositorios.Contrato;
+using BARSTOC_DAL.Repositorios;
+
 
 namespace BARSTOC_IOC
 {
@@ -17,6 +20,10 @@ namespace BARSTOC_IOC
             services.AddDbContext<DbBarstocContext>(options => {
                 options.UseSqlServer(configuration.GetConnectionString("StringSQlConnection"));
             });
+
+            // Dependencia de Repositorios
+            services.AddTransient(typeof(IGenericRepository<>), typeof(GenericRepository<>));
+            services.AddScoped<IPedidoRepository, PedidoRepository>();
         }
     }
 }
