@@ -15,7 +15,7 @@ public partial class TBL_Usuarios
 
     public string ApellidoUsuario { get; set; } = null!;
 
-    public string Correo { get; set; } = null!;
+    public string correo { get; set; } = null!;
 
     public int IdRol { get; set; }
 
