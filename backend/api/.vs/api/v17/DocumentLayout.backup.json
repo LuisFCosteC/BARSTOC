@@ -3,16 +3,8 @@
   "WorkspaceRootPath": "D:\\PROGRAMACION\\Angular\\BARSTOC\\backend\\api\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{2A8248F1-4D67-4223-92E6-17FAB3DF8CC9}|BARSTOC_IOC\\BARSTOC_IOC.csproj|d:\\programacion\\angular\\barstoc\\backend\\api\\barstoc_ioc\\dependencia.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{2A8248F1-4D67-4223-92E6-17FAB3DF8CC9}|BARSTOC_IOC\\BARSTOC_IOC.csproj|solutionrelative:barstoc_ioc\\dependencia.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{4BBA0417-054E-4E73-83B6-04DCBE51E1E6}|BARSTOC_DAL\\BARSTOC_DAL.csproj|d:\\programacion\\angular\\barstoc\\backend\\api\\barstoc_dal\\dbcontext\\dbbarstoccontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{4BBA0417-054E-4E73-83B6-04DCBE51E1E6}|BARSTOC_DAL\\BARSTOC_DAL.csproj|solutionrelative:barstoc_dal\\dbcontext\\dbbarstoccontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{1903A040-F8A0-4839-94FE-A10BE72386E3}|BARSTOC_API\\BARSTOC_API.csproj|d:\\programacion\\angular\\barstoc\\backend\\api\\barstoc_api\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
-      "RelativeMoniker": "D:0:0:{1903A040-F8A0-4839-94FE-A10BE72386E3}|BARSTOC_API\\BARSTOC_API.csproj|solutionrelative:barstoc_api\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+      "AbsoluteMoniker": "D:0:0:{4BBA0417-054E-4E73-83B6-04DCBE51E1E6}|BARSTOC_DAL\\BARSTOC_DAL.csproj|d:\\programacion\\angular\\barstoc\\backend\\api\\barstoc_dal\\repositorios\\contrato\\igenericrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4BBA0417-054E-4E73-83B6-04DCBE51E1E6}|BARSTOC_DAL\\BARSTOC_DAL.csproj|solutionrelative:barstoc_dal\\repositorios\\contrato\\igenericrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -22,7 +14,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 3,
+          "SelectedChildIndex": 2,
           "Children": [
             {
               "$type": "Bookmark",
@@ -34,40 +26,16 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "appsettings.json",
-              "DocumentMoniker": "D:\\PROGRAMACION\\Angular\\BARSTOC\\backend\\api\\BARSTOC_API\\appsettings.json",
-              "RelativeDocumentMoniker": "BARSTOC_API\\appsettings.json",
-              "ToolTip": "D:\\PROGRAMACION\\Angular\\BARSTOC\\backend\\api\\BARSTOC_API\\appsettings.json",
-              "RelativeToolTip": "BARSTOC_API\\appsettings.json",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2025-09-26T15:45:01.588Z"
-            },
-            {
-              "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "Dependencia.cs",
-              "DocumentMoniker": "D:\\PROGRAMACION\\Angular\\BARSTOC\\backend\\api\\BARSTOC_IOC\\Dependencia.cs",
-              "RelativeDocumentMoniker": "BARSTOC_IOC\\Dependencia.cs",
-              "ToolTip": "D:\\PROGRAMACION\\Angular\\BARSTOC\\backend\\api\\BARSTOC_IOC\\Dependencia.cs",
-              "RelativeToolTip": "BARSTOC_IOC\\Dependencia.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAjAAAAAAAAAA==",
+              "Title": "IGenericRepository.cs",
+              "DocumentMoniker": "D:\\PROGRAMACION\\Angular\\BARSTOC\\backend\\api\\BARSTOC_DAL\\Repositorios\\Contrato\\IGenericRepository.cs",
+              "RelativeDocumentMoniker": "BARSTOC_DAL\\Repositorios\\Contrato\\IGenericRepository.cs",
+              "ToolTip": "D:\\PROGRAMACION\\Angular\\BARSTOC\\backend\\api\\BARSTOC_DAL\\Repositorios\\Contrato\\IGenericRepository.cs",
+              "RelativeToolTip": "BARSTOC_DAL\\Repositorios\\Contrato\\IGenericRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-26T15:37:18.848Z",
+              "WhenOpened": "2025-10-16T16:46:16.321Z",
               "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "DbBarstocContext.cs",
-              "DocumentMoniker": "D:\\PROGRAMACION\\Angular\\BARSTOC\\backend\\api\\BARSTOC_DAL\\DBContext\\DbBarstocContext.cs",
-              "RelativeDocumentMoniker": "BARSTOC_DAL\\DBContext\\DbBarstocContext.cs",
-              "ToolTip": "D:\\PROGRAMACION\\Angular\\BARSTOC\\backend\\api\\BARSTOC_DAL\\DBContext\\DbBarstocContext.cs",
-              "RelativeToolTip": "BARSTOC_DAL\\DBContext\\DbBarstocContext.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAMAAAATAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-26T15:42:15.079Z"
             }
           ]
         }

@@ -10,3 +10,9 @@ D:\PROGRAMACION\Angular\BARSTOC\backend\api\BARSTOC_Utility\obj\Debug\net8.0\BAR
 D:\PROGRAMACION\Angular\BARSTOC\backend\api\BARSTOC_Utility\obj\Debug\net8.0\refint\BARSTOC_Utility.dll
 D:\PROGRAMACION\Angular\BARSTOC\backend\api\BARSTOC_Utility\obj\Debug\net8.0\BARSTOC_Utility.pdb
 D:\PROGRAMACION\Angular\BARSTOC\backend\api\BARSTOC_Utility\obj\Debug\net8.0\ref\BARSTOC_Utility.dll
+D:\PROGRAMACION\Angular\BARSTOC\backend\api\BARSTOC_Utility\bin\Debug\net8.0\BARSTOC_DTO.dll
+D:\PROGRAMACION\Angular\BARSTOC\backend\api\BARSTOC_Utility\bin\Debug\net8.0\BARSTOC_Model.dll
+D:\PROGRAMACION\Angular\BARSTOC\backend\api\BARSTOC_Utility\bin\Debug\net8.0\BARSTOC_DTO.pdb
+D:\PROGRAMACION\Angular\BARSTOC\backend\api\BARSTOC_Utility\bin\Debug\net8.0\BARSTOC_Model.pdb
+D:\PROGRAMACION\Angular\BARSTOC\backend\api\BARSTOC_Utility\obj\Debug\net8.0\BARSTOC_Utility.csproj.AssemblyReference.cache
+D:\PROGRAMACION\Angular\BARSTOC\backend\api\BARSTOC_Utility\obj\Debug\net8.0\BARSTOC_.6828C68B.Up2Date

@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("BARSTOC_Model")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+3a1b7df15c16fb985738786152613aec1e7c9e01")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+96e5c7ba0420494e838062113fbb68bbf598d6eb")]
 [assembly: System.Reflection.AssemblyProductAttribute("BARSTOC_Model")]
 [assembly: System.Reflection.AssemblyTitleAttribute("BARSTOC_Model")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

@@ -14,9 +14,8 @@ namespace BARSTOC_IOC
     {
         public static void InyectarDependecias(this IServiceCollection services, IConfiguration configuration)
         {
-            services.AddDbContext<DbBarstocContext>(options =>
-            {
-                options.UseSqlServer(configuration.GetConnectionString("DefaultConnection"));
+            services.AddDbContext<DbBarstocContext>(options => {
+                options.UseSqlServer(configuration.GetConnectionString("StringSQlConnection"));
             });
         }
     }

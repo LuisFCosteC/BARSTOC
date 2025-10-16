@@ -10,3 +10,13 @@ D:\PROGRAMACION\Angular\BARSTOC\backend\api\BARSTOC_BLL\obj\Debug\net8.0\BARSTOC
 D:\PROGRAMACION\Angular\BARSTOC\backend\api\BARSTOC_BLL\obj\Debug\net8.0\refint\BARSTOC_BLL.dll
 D:\PROGRAMACION\Angular\BARSTOC\backend\api\BARSTOC_BLL\obj\Debug\net8.0\BARSTOC_BLL.pdb
 D:\PROGRAMACION\Angular\BARSTOC\backend\api\BARSTOC_BLL\obj\Debug\net8.0\ref\BARSTOC_BLL.dll
+D:\PROGRAMACION\Angular\BARSTOC\backend\api\BARSTOC_BLL\bin\Debug\net8.0\BARSTOC_DAL.dll
+D:\PROGRAMACION\Angular\BARSTOC\backend\api\BARSTOC_BLL\bin\Debug\net8.0\BARSTOC_DTO.dll
+D:\PROGRAMACION\Angular\BARSTOC\backend\api\BARSTOC_BLL\bin\Debug\net8.0\BARSTOC_Model.dll
+D:\PROGRAMACION\Angular\BARSTOC\backend\api\BARSTOC_BLL\bin\Debug\net8.0\BARSTOC_Utility.dll
+D:\PROGRAMACION\Angular\BARSTOC\backend\api\BARSTOC_BLL\bin\Debug\net8.0\BARSTOC_DAL.pdb
+D:\PROGRAMACION\Angular\BARSTOC\backend\api\BARSTOC_BLL\bin\Debug\net8.0\BARSTOC_DTO.pdb
+D:\PROGRAMACION\Angular\BARSTOC\backend\api\BARSTOC_BLL\bin\Debug\net8.0\BARSTOC_Model.pdb
+D:\PROGRAMACION\Angular\BARSTOC\backend\api\BARSTOC_BLL\bin\Debug\net8.0\BARSTOC_Utility.pdb
+D:\PROGRAMACION\Angular\BARSTOC\backend\api\BARSTOC_BLL\obj\Debug\net8.0\BARSTOC_BLL.csproj.AssemblyReference.cache
+D:\PROGRAMACION\Angular\BARSTOC\backend\api\BARSTOC_BLL\obj\Debug\net8.0\BARSTOC_.D8C02C6E.Up2Date
