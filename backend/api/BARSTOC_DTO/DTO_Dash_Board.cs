@@ -6,10 +6,7 @@ using System.Threading.Tasks;
 
 namespace BARSTOC_DTO
 {
-    public class DTO_Roles
+    public class DTO_Dash_Board
     {
-        public int IdRol { get; set; }
-
-        public string?  NombreRol { get; set; }
     }
 }

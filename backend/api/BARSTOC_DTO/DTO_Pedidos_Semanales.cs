@@ -6,10 +6,10 @@ using System.Threading.Tasks;
 
 namespace BARSTOC_DTO
 {
-    public class DTO_Roles
+    public class DTO_Pedidos_Semanales
     {
-        public int IdRol { get; set; }
+        public string? Fecha { get; set; }
 
-        public string?  NombreRol { get; set; }
+        public int? Total { get; set; }
     }
 }
