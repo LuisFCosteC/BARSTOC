@@ -144,16 +144,18 @@ namespace BARSTOC_DAL.Repositorios
                 {
                     // Revertir transacción en caso de error
                     transaction.Rollback();
-
-                    // Log del error (podrías implementar un sistema de logging aquí)
-                    Console.WriteLine($"Error al registrar pedido: {ex.Message}");
-
-                    // Relanzar la excepción para que el controlador la maneje
                     throw new Exception($"Error al registrar el pedido: {ex.Message}", ex);
                 }
             }
 
             return pedidoGenerado;
+        }
+
+        // ✅ AGREGAR ESTE MÉTODO NUEVO
+        public async Task<int> GetUltimoNumeroPedido()
+        {
+            var numeroPedido = await _dbcontext.TblNumeroPedidos.FirstOrDefaultAsync();
+            return numeroPedido?.UltimoNumero ?? 0;
         }
     }
 }

@@ -3,16 +3,60 @@
   "WorkspaceRootPath": "D:\\PROGRAMACION\\Angular\\BARSTOC\\backend\\api\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{61661247-6AC3-4878-82F0-D11EB5D1B100}|BARSTOC_DTO\\BARSTOC_DTO.csproj|d:\\programacion\\angular\\barstoc\\backend\\api\\barstoc_dto\\dto_pedidos_semanales.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{61661247-6AC3-4878-82F0-D11EB5D1B100}|BARSTOC_DTO\\BARSTOC_DTO.csproj|solutionrelative:barstoc_dto\\dto_pedidos_semanales.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{43AD31AC-0FE6-4AA1-9D3E-88F361B3E4F2}|BARSTOC_BLL\\BARSTOC_BLL.csproj|d:\\programacion\\angular\\barstoc\\backend\\api\\barstoc_bll\\servicios\\productoservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{43AD31AC-0FE6-4AA1-9D3E-88F361B3E4F2}|BARSTOC_BLL\\BARSTOC_BLL.csproj|solutionrelative:barstoc_bll\\servicios\\productoservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{61661247-6AC3-4878-82F0-D11EB5D1B100}|BARSTOC_DTO\\BARSTOC_DTO.csproj|d:\\programacion\\angular\\barstoc\\backend\\api\\barstoc_dto\\dto_dash_board.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{61661247-6AC3-4878-82F0-D11EB5D1B100}|BARSTOC_DTO\\BARSTOC_DTO.csproj|solutionrelative:barstoc_dto\\dto_dash_board.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{2A8248F1-4D67-4223-92E6-17FAB3DF8CC9}|BARSTOC_IOC\\BARSTOC_IOC.csproj|d:\\programacion\\angular\\barstoc\\backend\\api\\barstoc_ioc\\dependencia.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2A8248F1-4D67-4223-92E6-17FAB3DF8CC9}|BARSTOC_IOC\\BARSTOC_IOC.csproj|solutionrelative:barstoc_ioc\\dependencia.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{61661247-6AC3-4878-82F0-D11EB5D1B100}|BARSTOC_DTO\\BARSTOC_DTO.csproj|d:\\programacion\\angular\\barstoc\\backend\\api\\barstoc_dto\\dtp_login.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{61661247-6AC3-4878-82F0-D11EB5D1B100}|BARSTOC_DTO\\BARSTOC_DTO.csproj|solutionrelative:barstoc_dto\\dtp_login.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{21E603B5-4414-4046-9DDB-4D55768E5A32}|BARSTOC_Utility\\BARSTOC_Utility.csproj|d:\\programacion\\angular\\barstoc\\backend\\api\\barstoc_utility\\automapperprofile.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{21E603B5-4414-4046-9DDB-4D55768E5A32}|BARSTOC_Utility\\BARSTOC_Utility.csproj|solutionrelative:barstoc_utility\\automapperprofile.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1903A040-F8A0-4839-94FE-A10BE72386E3}|BARSTOC_API\\BARSTOC_API.csproj|d:\\programacion\\angular\\barstoc\\backend\\api\\barstoc_api\\controllers\\rolescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1903A040-F8A0-4839-94FE-A10BE72386E3}|BARSTOC_API\\BARSTOC_API.csproj|solutionrelative:barstoc_api\\controllers\\rolescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{43AD31AC-0FE6-4AA1-9D3E-88F361B3E4F2}|BARSTOC_BLL\\BARSTOC_BLL.csproj|d:\\programacion\\angular\\barstoc\\backend\\api\\barstoc_bll\\servicios\\contrato\\irolesservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{43AD31AC-0FE6-4AA1-9D3E-88F361B3E4F2}|BARSTOC_BLL\\BARSTOC_BLL.csproj|solutionrelative:barstoc_bll\\servicios\\contrato\\irolesservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{43AD31AC-0FE6-4AA1-9D3E-88F361B3E4F2}|BARSTOC_BLL\\BARSTOC_BLL.csproj|d:\\programacion\\angular\\barstoc\\backend\\api\\barstoc_bll\\servicios\\rolesservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{43AD31AC-0FE6-4AA1-9D3E-88F361B3E4F2}|BARSTOC_BLL\\BARSTOC_BLL.csproj|solutionrelative:barstoc_bll\\servicios\\rolesservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1903A040-F8A0-4839-94FE-A10BE72386E3}|BARSTOC_API\\BARSTOC_API.csproj|d:\\programacion\\angular\\barstoc\\backend\\api\\barstoc_api\\controllers\\productoscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1903A040-F8A0-4839-94FE-A10BE72386E3}|BARSTOC_API\\BARSTOC_API.csproj|solutionrelative:barstoc_api\\controllers\\productoscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1903A040-F8A0-4839-94FE-A10BE72386E3}|BARSTOC_API\\BARSTOC_API.csproj|d:\\programacion\\angular\\barstoc\\backend\\api\\barstoc_api\\controllers\\mesascontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1903A040-F8A0-4839-94FE-A10BE72386E3}|BARSTOC_API\\BARSTOC_API.csproj|solutionrelative:barstoc_api\\controllers\\mesascontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1903A040-F8A0-4839-94FE-A10BE72386E3}|BARSTOC_API\\BARSTOC_API.csproj|d:\\programacion\\angular\\barstoc\\backend\\api\\barstoc_api\\controllers\\sedescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1903A040-F8A0-4839-94FE-A10BE72386E3}|BARSTOC_API\\BARSTOC_API.csproj|solutionrelative:barstoc_api\\controllers\\sedescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{43AD31AC-0FE6-4AA1-9D3E-88F361B3E4F2}|BARSTOC_BLL\\BARSTOC_BLL.csproj|d:\\programacion\\angular\\barstoc\\backend\\api\\barstoc_bll\\servicios\\mesasservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{43AD31AC-0FE6-4AA1-9D3E-88F361B3E4F2}|BARSTOC_BLL\\BARSTOC_BLL.csproj|solutionrelative:barstoc_bll\\servicios\\mesasservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{43AD31AC-0FE6-4AA1-9D3E-88F361B3E4F2}|BARSTOC_BLL\\BARSTOC_BLL.csproj|d:\\programacion\\angular\\barstoc\\backend\\api\\barstoc_bll\\servicios\\sedesservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{43AD31AC-0FE6-4AA1-9D3E-88F361B3E4F2}|BARSTOC_BLL\\BARSTOC_BLL.csproj|solutionrelative:barstoc_bll\\servicios\\sedesservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1903A040-F8A0-4839-94FE-A10BE72386E3}|BARSTOC_API\\BARSTOC_API.csproj|d:\\programacion\\angular\\barstoc\\backend\\api\\barstoc_api\\controllers\\usuarioscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1903A040-F8A0-4839-94FE-A10BE72386E3}|BARSTOC_API\\BARSTOC_API.csproj|solutionrelative:barstoc_api\\controllers\\usuarioscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{43AD31AC-0FE6-4AA1-9D3E-88F361B3E4F2}|BARSTOC_BLL\\BARSTOC_BLL.csproj|d:\\programacion\\angular\\barstoc\\backend\\api\\barstoc_bll\\servicios\\usuariosservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{43AD31AC-0FE6-4AA1-9D3E-88F361B3E4F2}|BARSTOC_BLL\\BARSTOC_BLL.csproj|solutionrelative:barstoc_bll\\servicios\\usuariosservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{61661247-6AC3-4878-82F0-D11EB5D1B100}|BARSTOC_DTO\\BARSTOC_DTO.csproj|d:\\programacion\\angular\\barstoc\\backend\\api\\barstoc_dto\\dto_usuarios.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{61661247-6AC3-4878-82F0-D11EB5D1B100}|BARSTOC_DTO\\BARSTOC_DTO.csproj|solutionrelative:barstoc_dto\\dto_usuarios.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -22,54 +66,187 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 8,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "DTO_Pedidos_Semanales.cs",
-              "DocumentMoniker": "D:\\PROGRAMACION\\Angular\\BARSTOC\\backend\\api\\BARSTOC_DTO\\DTO_Pedidos_Semanales.cs",
-              "RelativeDocumentMoniker": "BARSTOC_DTO\\DTO_Pedidos_Semanales.cs",
-              "ToolTip": "D:\\PROGRAMACION\\Angular\\BARSTOC\\backend\\api\\BARSTOC_DTO\\DTO_Pedidos_Semanales.cs",
-              "RelativeToolTip": "BARSTOC_DTO\\DTO_Pedidos_Semanales.cs",
+              "DocumentIndex": 3,
+              "Title": "RolesController.cs",
+              "DocumentMoniker": "D:\\PROGRAMACION\\Angular\\BARSTOC\\backend\\api\\BARSTOC_API\\Controllers\\RolesController.cs",
+              "RelativeDocumentMoniker": "BARSTOC_API\\Controllers\\RolesController.cs",
+              "ToolTip": "D:\\PROGRAMACION\\Angular\\BARSTOC\\backend\\api\\BARSTOC_API\\Controllers\\RolesController.cs",
+              "RelativeToolTip": "BARSTOC_API\\Controllers\\RolesController.cs",
+              "ViewState": "AgIAAFcAAAAAAAAAAAAkwHcAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-18T10:27:44.857Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "IRolesService.cs",
+              "DocumentMoniker": "D:\\PROGRAMACION\\Angular\\BARSTOC\\backend\\api\\BARSTOC_BLL\\Servicios\\Contrato\\IRolesService.cs",
+              "RelativeDocumentMoniker": "BARSTOC_BLL\\Servicios\\Contrato\\IRolesService.cs",
+              "ToolTip": "D:\\PROGRAMACION\\Angular\\BARSTOC\\backend\\api\\BARSTOC_BLL\\Servicios\\Contrato\\IRolesService.cs",
+              "RelativeToolTip": "BARSTOC_BLL\\Servicios\\Contrato\\IRolesService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-18T10:26:57.216Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "RolesService.cs",
+              "DocumentMoniker": "D:\\PROGRAMACION\\Angular\\BARSTOC\\backend\\api\\BARSTOC_BLL\\Servicios\\RolesService.cs",
+              "RelativeDocumentMoniker": "BARSTOC_BLL\\Servicios\\RolesService.cs",
+              "ToolTip": "D:\\PROGRAMACION\\Angular\\BARSTOC\\backend\\api\\BARSTOC_BLL\\Servicios\\RolesService.cs",
+              "RelativeToolTip": "BARSTOC_BLL\\Servicios\\RolesService.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-17T16:02:43.101Z",
+              "WhenOpened": "2025-10-18T10:25:51.417Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "AutoMapperProfile.cs",
+              "DocumentMoniker": "D:\\PROGRAMACION\\Angular\\BARSTOC\\backend\\api\\BARSTOC_Utility\\AutoMapperProfile.cs",
+              "RelativeDocumentMoniker": "BARSTOC_Utility\\AutoMapperProfile.cs",
+              "ToolTip": "D:\\PROGRAMACION\\Angular\\BARSTOC\\backend\\api\\BARSTOC_Utility\\AutoMapperProfile.cs",
+              "RelativeToolTip": "BARSTOC_Utility\\AutoMapperProfile.cs",
+              "ViewState": "AgIAAFUAAAAAAAAAAAAkwPMAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-18T10:20:02.963Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "DTO_Dash_Board.cs",
-              "DocumentMoniker": "D:\\PROGRAMACION\\Angular\\BARSTOC\\backend\\api\\BARSTOC_DTO\\DTO_Dash_Board.cs",
-              "RelativeDocumentMoniker": "BARSTOC_DTO\\DTO_Dash_Board.cs",
-              "ToolTip": "D:\\PROGRAMACION\\Angular\\BARSTOC\\backend\\api\\BARSTOC_DTO\\DTO_Dash_Board.cs",
-              "RelativeToolTip": "BARSTOC_DTO\\DTO_Dash_Board.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Title": "Dependencia.cs",
+              "DocumentMoniker": "D:\\PROGRAMACION\\Angular\\BARSTOC\\backend\\api\\BARSTOC_IOC\\Dependencia.cs",
+              "RelativeDocumentMoniker": "BARSTOC_IOC\\Dependencia.cs",
+              "ToolTip": "D:\\PROGRAMACION\\Angular\\BARSTOC\\backend\\api\\BARSTOC_IOC\\Dependencia.cs",
+              "RelativeToolTip": "BARSTOC_IOC\\Dependencia.cs",
+              "ViewState": "AgIAABIAAAAAAAAAAAAkwB4AAAA0AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-17T15:51:38.62Z",
+              "WhenOpened": "2025-10-18T10:19:08.054Z",
               "EditorCaption": ""
-            },
-            {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
-            },
-            {
-              "$type": "Bookmark",
-              "Name": "ST:128:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "DTP_Login.cs",
-              "DocumentMoniker": "D:\\PROGRAMACION\\Angular\\BARSTOC\\backend\\api\\BARSTOC_DTO\\DTP_Login.cs",
-              "RelativeDocumentMoniker": "BARSTOC_DTO\\DTP_Login.cs",
-              "ToolTip": "D:\\PROGRAMACION\\Angular\\BARSTOC\\backend\\api\\BARSTOC_DTO\\DTP_Login.cs",
-              "RelativeToolTip": "BARSTOC_DTO\\DTP_Login.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAjAAAAAAAAAA==",
+              "DocumentIndex": 6,
+              "Title": "ProductosController.cs",
+              "DocumentMoniker": "D:\\PROGRAMACION\\Angular\\BARSTOC\\backend\\api\\BARSTOC_API\\Controllers\\ProductosController.cs",
+              "RelativeDocumentMoniker": "BARSTOC_API\\Controllers\\ProductosController.cs",
+              "ToolTip": "D:\\PROGRAMACION\\Angular\\BARSTOC\\backend\\api\\BARSTOC_API\\Controllers\\ProductosController.cs",
+              "RelativeToolTip": "BARSTOC_API\\Controllers\\ProductosController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-17T15:52:12.219Z",
+              "WhenOpened": "2025-10-18T10:18:26.238Z",
               "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "MesasController.cs",
+              "DocumentMoniker": "D:\\PROGRAMACION\\Angular\\BARSTOC\\backend\\api\\BARSTOC_API\\Controllers\\MesasController.cs",
+              "RelativeDocumentMoniker": "BARSTOC_API\\Controllers\\MesasController.cs",
+              "ToolTip": "D:\\PROGRAMACION\\Angular\\BARSTOC\\backend\\api\\BARSTOC_API\\Controllers\\MesasController.cs",
+              "RelativeToolTip": "BARSTOC_API\\Controllers\\MesasController.cs",
+              "ViewState": "AgIAAKwAAAAAAAAAAAAkwMwAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-18T10:17:50.002Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "SedesController.cs",
+              "DocumentMoniker": "D:\\PROGRAMACION\\Angular\\BARSTOC\\backend\\api\\BARSTOC_API\\Controllers\\SedesController.cs",
+              "RelativeDocumentMoniker": "BARSTOC_API\\Controllers\\SedesController.cs",
+              "ToolTip": "D:\\PROGRAMACION\\Angular\\BARSTOC\\backend\\api\\BARSTOC_API\\Controllers\\SedesController.cs",
+              "RelativeToolTip": "BARSTOC_API\\Controllers\\SedesController.cs",
+              "ViewState": "AgIAAGoAAAAAAAAAAAAYwIsAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-18T10:17:11.511Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "ProductoService.cs",
+              "DocumentMoniker": "D:\\PROGRAMACION\\Angular\\BARSTOC\\backend\\api\\BARSTOC_BLL\\Servicios\\ProductoService.cs",
+              "RelativeDocumentMoniker": "BARSTOC_BLL\\Servicios\\ProductoService.cs",
+              "ToolTip": "D:\\PROGRAMACION\\Angular\\BARSTOC\\backend\\api\\BARSTOC_BLL\\Servicios\\ProductoService.cs",
+              "RelativeToolTip": "BARSTOC_BLL\\Servicios\\ProductoService.cs",
+              "ViewState": "AgIAAC8AAAAAAAAAAAAswDcAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-18T10:16:26.694Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "MesasService.cs",
+              "DocumentMoniker": "D:\\PROGRAMACION\\Angular\\BARSTOC\\backend\\api\\BARSTOC_BLL\\Servicios\\MesasService.cs",
+              "RelativeDocumentMoniker": "BARSTOC_BLL\\Servicios\\MesasService.cs",
+              "ToolTip": "D:\\PROGRAMACION\\Angular\\BARSTOC\\backend\\api\\BARSTOC_BLL\\Servicios\\MesasService.cs",
+              "RelativeToolTip": "BARSTOC_BLL\\Servicios\\MesasService.cs",
+              "ViewState": "AgIAAKcAAAAAAAAAAAAYwMgAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-18T10:15:56.523Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "SedesService.cs",
+              "DocumentMoniker": "D:\\PROGRAMACION\\Angular\\BARSTOC\\backend\\api\\BARSTOC_BLL\\Servicios\\SedesService.cs",
+              "RelativeDocumentMoniker": "BARSTOC_BLL\\Servicios\\SedesService.cs",
+              "ToolTip": "D:\\PROGRAMACION\\Angular\\BARSTOC\\backend\\api\\BARSTOC_BLL\\Servicios\\SedesService.cs",
+              "RelativeToolTip": "BARSTOC_BLL\\Servicios\\SedesService.cs",
+              "ViewState": "AgIAAHEAAAAAAAAAAAAYwJIAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-18T10:15:09.937Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "UsuariosController.cs",
+              "DocumentMoniker": "D:\\PROGRAMACION\\Angular\\BARSTOC\\backend\\api\\BARSTOC_API\\Controllers\\UsuariosController.cs",
+              "RelativeDocumentMoniker": "BARSTOC_API\\Controllers\\UsuariosController.cs",
+              "ToolTip": "D:\\PROGRAMACION\\Angular\\BARSTOC\\backend\\api\\BARSTOC_API\\Controllers\\UsuariosController.cs",
+              "RelativeToolTip": "BARSTOC_API\\Controllers\\UsuariosController.cs",
+              "ViewState": "AgIAAG8AAAAAAAAAAAAswIoAAAANAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-17T21:32:57.181Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "UsuariosService.cs",
+              "DocumentMoniker": "D:\\PROGRAMACION\\Angular\\BARSTOC\\backend\\api\\BARSTOC_BLL\\Servicios\\UsuariosService.cs",
+              "RelativeDocumentMoniker": "BARSTOC_BLL\\Servicios\\UsuariosService.cs",
+              "ToolTip": "D:\\PROGRAMACION\\Angular\\BARSTOC\\backend\\api\\BARSTOC_BLL\\Servicios\\UsuariosService.cs",
+              "RelativeToolTip": "BARSTOC_BLL\\Servicios\\UsuariosService.cs",
+              "ViewState": "AgIAAFsAAAAAAAAAAAAkwKUAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-17T21:31:47.419Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "DTO_Usuarios.cs",
+              "DocumentMoniker": "D:\\PROGRAMACION\\Angular\\BARSTOC\\backend\\api\\BARSTOC_DTO\\DTO_Usuarios.cs",
+              "RelativeDocumentMoniker": "BARSTOC_DTO\\DTO_Usuarios.cs",
+              "ToolTip": "D:\\PROGRAMACION\\Angular\\BARSTOC\\backend\\api\\BARSTOC_DTO\\DTO_Usuarios.cs",
+              "RelativeToolTip": "BARSTOC_DTO\\DTO_Usuarios.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABQAAAArAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-17T21:31:11.022Z"
             }
           ]
         }

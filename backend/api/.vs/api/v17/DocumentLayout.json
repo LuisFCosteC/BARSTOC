@@ -1,20 +1,7 @@
 {
   "Version": 1,
   "WorkspaceRootPath": "D:\\PROGRAMACION\\Angular\\BARSTOC\\backend\\api\\",
-  "Documents": [
-    {
-      "AbsoluteMoniker": "D:0:0:{61661247-6AC3-4878-82F0-D11EB5D1B100}|BARSTOC_DTO\\BARSTOC_DTO.csproj|d:\\programacion\\angular\\barstoc\\backend\\api\\barstoc_dto\\dto_pedidos_semanales.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{61661247-6AC3-4878-82F0-D11EB5D1B100}|BARSTOC_DTO\\BARSTOC_DTO.csproj|solutionrelative:barstoc_dto\\dto_pedidos_semanales.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{61661247-6AC3-4878-82F0-D11EB5D1B100}|BARSTOC_DTO\\BARSTOC_DTO.csproj|d:\\programacion\\angular\\barstoc\\backend\\api\\barstoc_dto\\dto_dash_board.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{61661247-6AC3-4878-82F0-D11EB5D1B100}|BARSTOC_DTO\\BARSTOC_DTO.csproj|solutionrelative:barstoc_dto\\dto_dash_board.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{61661247-6AC3-4878-82F0-D11EB5D1B100}|BARSTOC_DTO\\BARSTOC_DTO.csproj|d:\\programacion\\angular\\barstoc\\backend\\api\\barstoc_dto\\dtp_login.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{61661247-6AC3-4878-82F0-D11EB5D1B100}|BARSTOC_DTO\\BARSTOC_DTO.csproj|solutionrelative:barstoc_dto\\dtp_login.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    }
-  ],
+  "Documents": [],
   "DocumentGroupContainers": [
     {
       "Orientation": 0,
@@ -22,34 +9,8 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": -1,
           "Children": [
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "DTO_Pedidos_Semanales.cs",
-              "DocumentMoniker": "D:\\PROGRAMACION\\Angular\\BARSTOC\\backend\\api\\BARSTOC_DTO\\DTO_Pedidos_Semanales.cs",
-              "RelativeDocumentMoniker": "BARSTOC_DTO\\DTO_Pedidos_Semanales.cs",
-              "ToolTip": "D:\\PROGRAMACION\\Angular\\BARSTOC\\backend\\api\\BARSTOC_DTO\\DTO_Pedidos_Semanales.cs",
-              "RelativeToolTip": "BARSTOC_DTO\\DTO_Pedidos_Semanales.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-17T16:02:43.101Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "DTO_Dash_Board.cs",
-              "DocumentMoniker": "D:\\PROGRAMACION\\Angular\\BARSTOC\\backend\\api\\BARSTOC_DTO\\DTO_Dash_Board.cs",
-              "RelativeDocumentMoniker": "BARSTOC_DTO\\DTO_Dash_Board.cs",
-              "ToolTip": "D:\\PROGRAMACION\\Angular\\BARSTOC\\backend\\api\\BARSTOC_DTO\\DTO_Dash_Board.cs",
-              "RelativeToolTip": "BARSTOC_DTO\\DTO_Dash_Board.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-17T15:51:38.62Z",
-              "EditorCaption": ""
-            },
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
@@ -57,19 +18,6 @@
             {
               "$type": "Bookmark",
               "Name": "ST:128:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "DTP_Login.cs",
-              "DocumentMoniker": "D:\\PROGRAMACION\\Angular\\BARSTOC\\backend\\api\\BARSTOC_DTO\\DTP_Login.cs",
-              "RelativeDocumentMoniker": "BARSTOC_DTO\\DTP_Login.cs",
-              "ToolTip": "D:\\PROGRAMACION\\Angular\\BARSTOC\\backend\\api\\BARSTOC_DTO\\DTP_Login.cs",
-              "RelativeToolTip": "BARSTOC_DTO\\DTP_Login.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAjAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-17T15:52:12.219Z",
-              "EditorCaption": ""
             }
           ]
         }

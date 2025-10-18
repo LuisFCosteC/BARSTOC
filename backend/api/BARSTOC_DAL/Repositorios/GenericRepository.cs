@@ -79,7 +79,7 @@ namespace BARSTOC_DAL.Repositorios
         {
             try
             {
-                IQueryable<TModel> queryModel = filtro == null ? _dbcontext.Set<TModel>() : _dbcontext.Set<TModel>().Where(filter);
+                IQueryable<TModel> queryModel = filtro == null ? _dbcontext.Set<TModel>() : _dbcontext.Set<TModel>().Where(filtro);
                 return queryModel;
             }
             catch

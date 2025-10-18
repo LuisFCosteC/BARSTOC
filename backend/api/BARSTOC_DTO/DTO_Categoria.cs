@@ -9,9 +9,7 @@ namespace BARSTOC_DTO
     public class DTO_Categoria
     {
         public int IdCategoria { get; set; }
-
         public string NombreCategoria { get; set; } = null!;
-
         public string? Estado { get; set; }
     }
 }

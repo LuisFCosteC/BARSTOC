@@ -100,3 +100,6 @@ D:\PROGRAMACION\Angular\BARSTOC\backend\api\BARSTOC_API\bin\Debug\net8.0\BARSTOC
 D:\PROGRAMACION\Angular\BARSTOC\backend\api\BARSTOC_API\bin\Debug\net8.0\BARSTOC_DAL.pdb
 D:\PROGRAMACION\Angular\BARSTOC\backend\api\BARSTOC_API\bin\Debug\net8.0\BARSTOC_Model.pdb
 D:\PROGRAMACION\Angular\BARSTOC\backend\api\BARSTOC_API\bin\Debug\net8.0\BARSTOC_Utility.pdb
+D:\PROGRAMACION\Angular\BARSTOC\backend\api\BARSTOC_API\bin\Debug\net8.0\AutoMapper.dll
+D:\PROGRAMACION\Angular\BARSTOC\backend\api\BARSTOC_API\bin\Debug\net8.0\AutoMapper.Extensions.Microsoft.DependencyInjection.dll
+D:\PROGRAMACION\Angular\BARSTOC\backend\api\BARSTOC_API\bin\Debug\net8.0\Microsoft.AspNetCore.Authentication.JwtBearer.dll

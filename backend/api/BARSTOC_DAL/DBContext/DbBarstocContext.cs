@@ -461,7 +461,7 @@ public partial class DbBarstocContext : DbContext
 
             entity.HasIndex(e => e.IdSede, "IX_Usuarios_Sede");
 
-            entity.HasIndex(e => e.Correo, "UQ__TBL_Usua__2A586E0B16AAB4EE").IsUnique();
+            entity.HasIndex(e => e.correo, "UQ__TBL_Usua__2A586E0B16AAB4EE").IsUnique();
 
             entity.HasIndex(e => e.NumeroDocumento, "UQ__TBL_Usua__4CC511E41741BC09").IsUnique();
 
@@ -471,7 +471,7 @@ public partial class DbBarstocContext : DbContext
             entity.Property(e => e.ApellidoUsuario)
                 .HasMaxLength(100)
                 .HasColumnName("apellidoUsuario");
-            entity.Property(e => e.Correo)
+            entity.Property(e => e.correo)
                 .HasMaxLength(150)
                 .IsUnicode(false)
                 .HasColumnName("correo");

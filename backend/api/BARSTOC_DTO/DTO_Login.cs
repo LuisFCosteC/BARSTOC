@@ -6,10 +6,9 @@ using System.Threading.Tasks;
 
 namespace BARSTOC_DTO
 {
-    public class DTP_Login
+    public class DTO_Login
     {
-        public string? usuarioLogin { get; set; }
-
-        public string? passwordHash { get; set; }
+        public string? UsuarioLogin { get; set; }
+        public string? PasswordHash { get; set; }
     }
 }

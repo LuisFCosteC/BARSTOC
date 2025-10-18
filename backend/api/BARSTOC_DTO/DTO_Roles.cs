@@ -9,7 +9,6 @@ namespace BARSTOC_DTO
     public class DTO_Roles
     {
         public int IdRol { get; set; }
-
-        public string?  NombreRol { get; set; }
+        public string NombreRol { get; set; } = null!;
     }
 }
